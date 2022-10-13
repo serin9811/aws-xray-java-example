@@ -1,0 +1,5 @@
+09:16:46.773 [INFO ] 09:16:46.773 o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.xraytest.XraytestApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:16:46.774 [INFO ] 09:16:46.774 o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.xraytest.XraytestApplicationTests]: XraytestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:16:46.978 [INFO ] 09:16:46.978 c.e.x.XraytestApplicationTests - Starting XraytestApplicationTests using Java 17.0.2 on ip-10-23-8-126.ap-northeast-2.compute.internal with PID 35818 (started by serinheo in /Users/serinheo/IdeaProjects/xraytest)
+09:16:46.979 [INFO ] 09:16:46.979 c.e.x.XraytestApplicationTests - No active profile set, falling back to 1 default profile: "default"
+09:16:47.783 [INFO ] 09:16:47.783 c.e.x.XraytestApplicationTests - Started XraytestApplicationTests in 0.915 seconds (JVM running for 1.368)

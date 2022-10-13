@@ -1,0 +1,13 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  level:
+    com:
+      amazonaws:
+        xray: DEBUG
+aws:
+  xray:
+    fixed-segment-name: xray-application
+    prefix-log-name: AWS-XRAY
+    sampling-rules-json: /sampling-rules.json
