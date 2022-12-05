@@ -1,8 +1,10 @@
 package com.example.xraytest.controller;
 
+import com.amazonaws.xray.spring.aop.XRayEnabled;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+@XRayEnabled
 @RestController
 public class UserController {
 

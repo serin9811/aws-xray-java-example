@@ -19,15 +19,15 @@ public class XrayConfig {
     private String fixedSegmentName;
 
     static {
-        AWSXRayRecorderBuilder builder = AWSXRayRecorderBuilder.standard().withPlugin(new EC2Plugin());
+        AWSXRayRecorderBuilder builder = AWSXRayRecorderBuilder.standard();
 
         URL ruleFile = WebConfig.class.getResource("/sampling-rules.json");
         builder.withSamplingStrategy(new LocalizedSamplingStrategy(ruleFile));
 
         AWSXRay.setGlobalRecorder(builder.build());
-        AWSXRay.beginSegment("Xray Test Begin");
+        //AWSXRay.beginSegment("Xray Test Begin");
 
-        AWSXRay.endSegment();
+        //AWSXRay.endSegment();
     }
 
     @Bean

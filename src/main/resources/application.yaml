@@ -8,6 +8,6 @@ server:
         xray: DEBUG
 aws:
   xray:
-    fixed-segment-name: xray-application
+    fixed-segment-name: xray-test
     prefix-log-name: AWS-XRAY
     sampling-rules-json: /sampling-rules.json
