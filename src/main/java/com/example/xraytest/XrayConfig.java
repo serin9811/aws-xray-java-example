@@ -25,9 +25,9 @@ public class XrayConfig {
         builder.withSamplingStrategy(new LocalizedSamplingStrategy(ruleFile));
 
         AWSXRay.setGlobalRecorder(builder.build());
-        //AWSXRay.beginSegment("Xray Test Begin");
+        AWSXRay.beginSegment("Xray Test Begin");
 
-        //AWSXRay.endSegment();
+        AWSXRay.endSegment();
     }
 
     @Bean
